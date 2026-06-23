@@ -1,0 +1,13 @@
+name: Windows Self Hosted Workflow
+
+on: push
+
+jobs:
+  build:
+    runs-on:
+      - self-hosted
+      - windows
+
+    steps:
+      - name: Display Message
+        run: echo "Running on Windows Self-Hosted Runner"
